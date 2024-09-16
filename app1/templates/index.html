@@ -4,27 +4,42 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name ="viewport"content="width=device-width, initial-scale=1">
-        <meta name="description" content="I'm Dnyaneshwar Sakhare. I'm currently pursuing B Tech in Computer Science Engineering. Looking for software developer/engineer role to showcase my skills & work">
-        <meta name="theme-color" content="#2196f3" />
-	<title>Kalyonx.Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Basic Description -->
+    <meta name="description" content="I'm Hardik Vaghamshi, pursuing a B.E in Information Technology. I am actively seeking software developer/engineer roles to showcase my skills and work.">
+
+    <!-- Keywords for Search Engines -->
+    <meta name="keywords" content="Hardik Vaghamshi, Kalyonix, Kalyonix Solutions, software developer, computer science engineering, software engineer, web development, Python, Django">
+
+    <!-- Theme Color for Browsers -->
+    <meta name="theme-color" content="#2196f3">
+
+    <!-- Open Graph Tags (optional, for social media) -->
+    <meta property="og:title" content="Hardik Vaghamshi  | kalyonix | kalyonix.Solutions">
+    <meta property="og:description" content="Explore the work and skills of Hardik Vaghamshi, a BE Information Technology student seeking software development roles.">
+    <meta property="og:image" content="{% static 'images/logo.png' %}"> <!-- Replace with your image URL -->
+    <meta property="og:url" content="https://kalyonix.pythonanywhere.com/.com"> <!-- Replace with your website URL -->
+    <meta property="og:type" content="website">
+
+	<title>Hardik Vaghamshi | Kalyonx.Solutions</title>
 	<link rel="shortcut icon" type="image/ico" href="images&icons/icon_1.ico">
         <link rel="icon" type="image/ico" href="images&icons/icon.ico">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
-	
+
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
-	
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-	
+
 	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-	
+
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 
@@ -32,11 +47,11 @@
 	<link rel="stylesheet" href="{% static 'style.css' %}">
 
 	<style type="text/css">
-	
-	
+
+
 	</style>
 	<script>
-		
+
 		//adding preloader css animation
 		var count=0;
 	      var counter = setInterval(() => {
@@ -75,7 +90,7 @@ mybutton.style.display = "none";
 
 
 
-})	
+})
 document.addEventListener('DOMContentLoaded', () => {
 
 	//for nav links for mobile....
@@ -87,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	linefornav.addEventListener('click', () => {
 		navlinks.classList.toggle("open");
 		linefornav.classList.toggle("cross");
-		
+
 	});
 
 	$('#nav-links li a').on('click' , ()=>{
@@ -120,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
      			 $('.about-part1').addClass('animate__fadeInRightBig')
     		},{offset:'50%'})
 		});
-		  
+
 		$(document).ready(function(){
     		$('.about-part2').waypoint(function(direction){
      			 $('.about-part2').addClass('animate__fadeInLeftBig')
@@ -200,27 +215,59 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	</script>
-	
+
 	<style>
-		
-		
+	#hero {
+    background: gray;
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("{% static 'images/bg11.jpg' %}");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    }
+    /* Media Query for Tablets and Mobile Devices */
+    @media (max-width: 768px) {
+        #hero {
+            background-size: auto; /* Adjust background size for smaller screens */
+            background-position: top center; /* Align background image to the top */
+            min-height: 60vh; /* Reduce minimum height for mobile devices */
+        }
+    }
+
+    /* Media Query for Mobile Devices */
+    @media (max-width: 480px) {
+        #hero {
+            background-size: auto; /* Adjust background size for very small screens */
+            background-position: top center; /* Align background image to the top */
+            min-height: 50vh; /* Further reduce minimum height for small screens */
+            font-size: 14px; /* Adjust font size for small screens */
+        }
+    }
+
+
 	</style>
 </head>
 <body id="top">
 <!-- ********HEADER***************-->
-	
+
 	<div class="wrapper">
 	    <section>
 	      <div class="loader"></div>
 	      <div class="count"></div>
 	    </section>
 	</div>
-	
-  	
+
+
 
 	<nav>
 		<div class="linefornav" id="linefornav">
-		
+
 
 			<span></span>
 			<span></span>
@@ -229,13 +276,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		</div>
 
 		<ul class="nav-links" id="nav-links">
-			<li><h2 href="#top"><img style="width: 200px;height: 200px;margin-right: 500px;" src="images&icons/logo.png" alt="Dnyaneshwar Sakhare Logo"></h2></li>
+			<li><h2 href="#top"><img style="width: 200px;height: 200px;margin-right: 500px;" src="{% static 'images/logo.png' %}" alt="Kalyonix Logo"></h2></li>
 			<li><a href="#top"> Home</a></li>
 			<li><a href="#about"> About Me</a></li>
 			<li><a href="#Skills"> Skills</a></li>
 			<li><a href="#portfolio"> Portfolio</a></li>
 			<li><a href="#contact"> Contact Me</a></li>
-		
+
 		</ul>
 
 	</nav>
@@ -249,23 +296,23 @@ document.addEventListener('DOMContentLoaded', () => {
 		<h1 class="heading-part1 animate__animated">Welcome !! To Kalyonix Solutions</h1>
 		<h3 class="heading-part2 animate__animated">I love playing with Html, Css and Javascript with programming knowledge of C, C++, Java & more.</h3>
 		<a href="#about" style="font-family: 'Josefin Sans', sans-serif;" class="btn knowmore animate__animated ">Know More</a>
-		
-		<p id="scrolltotop" title="Go to top">Scroll to Top</p>		
-		
+
+		<p id="scrolltotop" title="Go to top">Scroll to Top</p>
+
 
 	</div>
 	<!-- ********About***************-->
 	<div id="about" class="about">
 		<h3 class="title">About Me</h3>
 		<div id="two-cols">
-		<div class="about-image about-part1 animate__animated"><img style="width: 300px;height: 300px; border-radius: 5%;" src="images&icons/logo.jpg" alt="Dnyaneshwar sakhare image"></div>
+		<div class="about-image about-part1 animate__animated"><img style="width: 300px;height: 300px; border-radius: 5%;" src="{% static 'images/logo.png' %}" alt="kalyonix"></div>
 		<div class="about-bio about-part2 animate__animated">
 			<p>
 				At Kalyonix Solutions, we are passionate about transforming ideas into innovative digital solutions. As a cutting-edge technology company, we specialize in providing comprehensive IT services that empower businesses to thrive in today’s fast-evolving digital landscape.<br><br>
 
 				Our expertise spans a wide range of domains, including software development, web and mobile app design, cloud computing, and IT consulting. We take pride in delivering customized, scalable, and efficient solutions tailored to meet the unique needs of our clients.<br><br>
-				
-				Whether you're a startup aiming to break into the market or an established business looking to optimize and innovate, Kalyonix Solutions is your trusted partner in success. With a client-centric approach, we are committed to excellence, reliability, and delivering results that drive growth and sustainability. 
+
+				Whether you're a startup aiming to break into the market or an established business looking to optimize and innovate, Kalyonix Solutions is your trusted partner in success. With a client-centric approach, we are committed to excellence, reliability, and delivering results that drive growth and sustainability.
 			</p>
 		</div>
 				<p>&nbsp;</p>
@@ -322,21 +369,21 @@ document.addEventListener('DOMContentLoaded', () => {
 		</ul>
 	</div>
 	<hr>
-	
+
 	<!--Frameworks worked with-->
 		<div class="framework">
 			<p style=" font-family: 'Josefin Sans', sans-serif;" class="fw-part1 animate__animated">Some technologies i have experience working with :</p><hr>
 			<div class="fwimg fw-part2 animate__animated">
-				<img class="fwf" src="framework png's/ht5.png" alt="html">
-				<img class="fwf" src="framework png's/css.png" alt="css">
-				<img class="fwf" src="data:image/png;base64,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" alt="react">
-				<img class="fwf" src="framework png's/mysql.png" alt="MySql">
-				<img class="fwf" src="framework png's/python.png" alt="Python">
-				<img class="fwf" src="framework png's/mongodb.png" alt="MongoDB">
-				<img class="fwf" src="framework png's/js.png" alt="Javascript">
-				<img class="fwf" src="framework png's/django.png" alt="Django">
-				<img class="fwf" src="framework png's/vs.png" alt="vs code">
-				<img class="fwf" src="framework png's/git.png" alt="github">
+				<img class="fwf" src="{% static 'framework png\'s/ht5.png' %}" alt="html">
+                <img class="fwf" src="{% static 'framework png\'s/css.png' %}" alt="css">
+                <img class="fwf" src="{% static 'framework png\'s/mysql.png' %}" alt="MySql">
+                <img class="fwf" src="{% static 'framework png\'s/python.png' %}" alt="Python">
+                <img class="fwf" src="{% static 'framework png\'s/mongodb.png' %}" alt="MongoDB">
+                <img class="fwf" src="{% static 'framework png\'s/js.png' %}" alt="Javascript">
+                <img class="fwf" src="{% static 'framework png\'s/django.png' %}" alt="Django">
+                <img class="fwf" src="{% static 'framework png\'s/vs.png' %}" alt="vs code">
+                <img class="fwf" src="{% static 'framework png\'s/git.png' %}" alt="github">
+
 			</div>
 		</div><hr>
 	<!-- *********Portfolio**************-->
@@ -367,7 +414,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 {% endfor %}
             </ul>
         {% endif %}
-        
+
         <form id="contact-form" action="{% url 'contact' %}" method="post">
             {% csrf_token %}
             <label for="name">Name:</label>
@@ -389,16 +436,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	<!-- *********FOOTER**************-->
 	<div class="cv-part1 animate__animated" style="text-align: center;">
-		<a href="E:\portfolio\portfolio\HARDIK RESUME PY.pdf" download="E:\portfolio\portfolio\HARDIK RESUME PY.pdf" target="_blank" class="btn cv-part1 animate__animated" style="font-family: 'Josefin Sans', sans-serif;" id="cv">Download CV</a>
+		<a href="/media/HARDIK RESUME PY.pdf" download="/media/HARDIK RESUME PY.pdf" target="_blank" class="btn cv-part1 animate__animated" style="font-family: 'Josefin Sans', sans-serif;" id="cv">Download CV</a>
 	</div>
 
 	<hr>
-	<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="hardik-vaghamshi-677859288"   
+	<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="hardik-vaghamshi-677859288"  
 	data-version="v1">
 	 <a class="badge-base__link LI-simple-link" href="https://linkedin.com/in/hardik-vaghamshi-0677859288">Hardik Vaghamshi</a>
-   </div>              
+   </div>
 
-	
+
 	<!-- *********FOOTER**************-->
 	<footer id="social-media">
 		<ul class="sm-part1 animate__animated">
@@ -410,7 +457,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		</ul>
 		<p class="sm-part2 animate__animated">Thank you for visiting !</p>
 		<p class="sm-part2 animate__animated">&ldquo; Believe In Yourself &rdquo;</p>
-		<p class="sm-part2 animate__animated">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Made with <span style="color: red"class="heart">❤</span> by Kalyonix ' s Devlopers </p>	
+		<p class="sm-part2 animate__animated">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Made with <span style="color: red"class="heart">❤</span> by Kalyonix ' s Devlopers </p>
 	</footer>
 
 
